@@ -11,12 +11,23 @@
     */
 
     //ENTRADA
-
+    const numero = Number(prompt("me diga um numero menor que 1000").trim())
 
     //PROCESSAMENTO
-
-    
+    const centenas = Math.floor(numero / 100)
+    const dezena = Math.floor(numero % 100) % 10
+    const unidades = numero % 10
     //SAÍDA
+
+  if(numero >= 100){
+    alert(`${centenas} centenas, ${dezena} dezenas e ${unidades} unidades`)
+  }
+  else if(numero >= 10 && numero <= 99){
+    alert(`${dezena} dezenas e ${unidades} unidades`)
+  }
+  else if(numero >=1 && numero <=9){
+    alert(`${unidades} unidades`)
+  }
 
 
 </script>
